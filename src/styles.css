@@ -1,24 +1,29 @@
+body {
+  margin: 0;
+}
+
 .app {
   display: flex;
   justify-content: center;
 }
 
 .homepage {
+  height: 100vh;
   width: 1024px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .header {
-  height: 100px;
+  min-height: 50px;
   width: 1024px;
   background-color: #918F84;
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 .footer {
-  height: 90px;
+  min-height: 42px;
   width: 1024px;
   background-color: #918F84;
   display: flex;
@@ -53,6 +58,8 @@ For some reason I could not get these styles to apply to their respective div. A
   font-size: 26px;
   color: #FDF7F7;
   margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -60,6 +67,8 @@ For some reason I could not get these styles to apply to their respective div. A
   font-size: 26px;
   color: #FDF7F7;
   margin-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -110,13 +119,13 @@ For some reason I could not get these styles to apply to their respective div. A
   color: #FDF7F7;
   font-family: Geneva;
   font-size: 48px;
-  margin: auto;
+  margin: 0 auto;
   padding-right: 36px;
   text-align: center;
 }
 
 .orange-overlay {
-  height: 834px;
+  flex-grow: 1;
   width: 1024px;
   display: flex;
   justify-content: center;
@@ -125,12 +134,13 @@ For some reason I could not get these styles to apply to their respective div. A
 
 .reading-view {
   display: flex;
+  height: 100vh;
   justify-content: center;
   flex-direction: column;
 }
 
 .reading-view-content {
-  height: 834px;
+  flex-grow: 1;
   width: 1024px;
   background-color: #A7A7A7;
   overflow-y: scroll;
@@ -139,7 +149,6 @@ For some reason I could not get these styles to apply to their respective div. A
 
 .reading-view-text {
   padding: 10px;
-  height: 834px;
   width: 95%;
   color: #FDF7F7;
   font-family: Geneva;
